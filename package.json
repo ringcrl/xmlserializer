@@ -2,8 +2,8 @@
   "name": "xmlserializer",
   "description": "Serializes a document to XML/XHTML",
   "version": "0.6.1",
-  "repository": "http://github.com/cburgmer/xmlserializer",
-  "author": "Christoph Burgmer",
+  "repository": "http://github.com/ringcrl/xmlserializer",
+  "author": "Chenng",
   "keywords": [
     "html",
     "html5",
@@ -12,20 +12,13 @@
     "serializer",
     "XMLSerializer"
   ],
-  "main": "./xmlserializer.js",
-  "dependencies": {},
-  "devDependencies": {
-    "jasmine-core": "^2.5.2",
-    "jasmine-node": "^2.0.1",
-    "jshint": "^2.9.6",
-    "parse5": "^2.2.3",
-    "phantomjs-prebuilt": "^2.1.16"
-  },
+  "main": "./index.js",
   "license": "MIT",
   "scripts": {
-    "jshint": "jshint xmlserializer.js tests/specs/*.js tests/browserSpecs/*.js",
-    "jasmine-node": "jasmine-node --captureExceptions tests/specs/",
-    "jasmine-browser": "phantomjs tests/run-jasmine.js tests/SpecRunner.html",
-    "test": "npm run jshint && npm run jasmine-node && npm run jasmine-browser"
+    "test": "jest"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "jest": "^23.6.0"
   }
 }
